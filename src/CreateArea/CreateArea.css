@@ -1,0 +1,135 @@
+.container {
+    display: flex;
+    justify-content: center;
+    padding: 20px 0;
+    max-width: 600px;
+    margin: 24px auto 0 auto;
+    padding: 0 16px;
+}
+
+.createNote {
+    position: relative;
+    width: 600px;
+    margin: 20px auto;
+    padding: 15px;
+    border-radius: 8px;
+    box-shadow: var(--note-shadow);
+    background-color: var(--note-background);
+    border: 1px solid var(--border-color);
+    transition: box-shadow .3s ease, background-color .3s ease;
+    width: 100%;
+    box-sizing: border-box;
+    min-width: 0;
+}
+
+.createNote input,
+.createNote textarea {
+    width: 100%;
+    border: none;
+    padding: 4px 0;
+    outline: none;
+    font-size: 1rem;
+    font-family: 'Roboto', sans-serif;
+    resize: none;
+    color: inherit;
+    background: transparent;
+}
+
+.createNote input {
+    font-size: 1.1rem;
+    font-weight: 500;
+    margin-bottom: 10px;
+}
+
+.createNote .material-icons-outlined {
+    color: inherit;
+}
+
+.footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 10px;
+    flex-wrap: wrap;
+    gap: 8px;
+}
+
+.footer .icons {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.icons {
+    display: flex;
+    gap: 12px;
+    flex-wrap: wrap;
+}
+
+.icons span {
+    font-size: 20px;
+    color: var(--text-secondary);
+    cursor: pointer;
+    padding: 5px;
+    border-radius: 50%;
+}
+
+.icons span:hover {
+    background-color: var(--background-tertiary-hover);
+}
+
+.closeButton {
+    color: inherit;
+    background: transparent;
+    border: none;
+    padding: 8px 24px;
+    font-size: 0.875rem;
+    font-weight: 500;
+    cursor: pointer;
+    border-radius: 4px;
+    flex-shrink: 0;
+}
+
+.closeButton:hover {
+    background-color: var(--background-tertiary-hover);
+}
+
+.paletteContainer {
+    display: flex;
+    align-items: center;
+    position: relative;
+}
+
+
+@media (max-width: 768px) {
+    .createNote {
+        width: 95%;
+    }
+}
+
+@media (max-width: 600px) {
+        .createNote {
+        width: 80%;
+        margin-left: 5rem;
+    }
+
+    .container {
+        margin: 12px 0 0 0;
+        padding: 0 px;
+    }
+
+    .createNote {
+        padding: 12px 8px;
+    }
+
+    .footer {
+        flex-direction: column;
+        align-items: stretch;
+    }
+}
+
+@media (max-width: 400px) {
+        .createNote {
+        margin-left: 9rem
+    }
+}

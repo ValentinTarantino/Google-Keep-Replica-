@@ -1,0 +1,105 @@
+.menuOverlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+}
+
+.menu {
+    background-color: var(--background-primary);
+    color: var(--text-primary);
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+    width: 300px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.menu h3 {
+    margin: 0;
+    border-bottom: 1px solid var(--border-color);
+    padding-bottom: 10px;
+}
+
+.option {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* Estilos para el Toggle Switch */
+.switch {
+    position: relative;
+    display: inline-block;
+    width: 50px;
+    height: 24px;
+}
+
+.switch input {
+    opacity: 0;
+    width: 0;
+    height: 0;
+}
+
+.slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #ccc;
+    transition: .4s;
+    border-radius: 34px;
+}
+
+.slider:before {
+    position: absolute;
+    content: "";
+    height: 18px;
+    width: 18px;
+    left: 3px;
+    bottom: 3px;
+    background-color: white;
+    transition: .4s;
+    border-radius: 50%;
+}
+
+input:checked+.slider {
+    background-color: var(--brand-color);
+}
+
+input:checked+.slider:before {
+    transform: translateX(26px);
+}
+
+.langButtons {
+    display: flex;
+    gap: 10px;
+}
+
+.langButtons button {
+    background-color: var(--brand-color);
+    color: var(--brand-color-contrast);
+    border-color: var(--brand-color);
+    padding: 5px 10px;
+    border-radius: 4px;
+    cursor: pointer;
+    font-weight: 500;
+}
+
+.langButtons button.active {
+    background-color: var(--brand-color);
+    color: var(--brand-color-contrast);
+    border-color: var(--brand-color);
+
+}
+
