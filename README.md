@@ -5,6 +5,7 @@ Este proyecto es una **réplica lo más fiel posible de la página Google Keep**
 ## Tecnologías utilizadas
 
 - **React** 
+- **JavaScript** 
 - **CSS** 
 - **Context API** para la gestión de temas (modo claro/oscuro) y configuración global.
 - **i18next** para la traducción y soporte multilenguaje.
