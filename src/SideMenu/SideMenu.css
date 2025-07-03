@@ -1,7 +1,7 @@
 .side-menu {
     position: absolute;
     top: 55px;
-    left: 0;
+    left: 3px;
     height: 92vh;
     width: 64px;
     background: var(--background-primary, #fff);
@@ -51,4 +51,22 @@
 
 .side-menu-overlay {
     z-index: 998;
+}
+
+
+@media (max-width: 600px) {
+    .side-menu:not(.expanded) {
+        width: 56px;
+        min-width: 56px;
+    }
+    .menu-item {
+        font-size: 1rem;
+        padding: 0 12px;
+    }
+    .side-menu.expanded .menu-item .material-icons-outlined {
+        margin-right: 12px;
+    }
+    .side-menu-overlay {
+        z-index: 998;
+    }
 }

@@ -128,8 +128,8 @@
     }
 }
 
-@media (max-width: 400px) {
+@media (max-width: 480px) {
         .createNote {
-        margin-left: 9rem
+        margin-left: 4rem
     }
 }

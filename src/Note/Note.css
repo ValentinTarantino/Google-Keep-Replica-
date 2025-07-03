@@ -178,74 +178,11 @@
     gap: 16px;
 }
 
-@media (max-width: 768px) {
-    .notes-area {
-        padding: 0 20px;
-    }
-}
-
-@media (max-width: 900px) {
-    .notes-area {
-        padding: 0 10px 0 70px;
-        /* menos padding en pantallas chicas */
-    }
-
-    .note {
-        max-width: 98vw;
-        margin: 8px auto;
-    }
-}
-
-@media (max-width: 600px) {
-    .notes-area {
-        padding: 0 2vw  1 2vw;
-    }
-
-    .note {
-        max-width: 100vw;
-        margin: 4px 0;
-        padding: 10px;
-    }
-}
-
 .note .material-icons-outlined {
     color: inherit;
 }
 
-@media (max-width: 600px) {
-    .colorPalette {
-        min-width: 120px;
-        max-width: 98vw;
-    }
-}
 
-@media (max-width: 480px) {
-    .note {
-        margin-left: 0.5rem;
-    }
-    .notes-section-title
-    {
-        margin-left: 1rem;
-    }
-}
-
-@media (max-width: 450px) {
-    .note {
-margin-left: 1.5rem;
-    }
-}
-
-@media (max-width: 400px) {
-    .note {
-    margin-left: 2.5rem;
-    }
-    .notes-section-title
-    {
-        margin-left: 3rem;
-    }
-}
-
-/* Edición de nota (inputs y textarea) */
 .edit-title {
     width: 90%;
     font-size: 1.1rem;
@@ -287,7 +224,6 @@ margin-left: 1.5rem;
     box-shadow: 0 2px 8px rgba(60,64,67,.15);
 }
 
-/* Botones de acción en edición */
 .edit-actions {
     display: flex;
     gap: 10px;
@@ -314,15 +250,33 @@ margin-left: 1.5rem;
     color: #202124;
 }
 
-/* Responsive para edición */
 @media (max-width: 600px) {
-    .edit-title,
-    .edit-content {
-        font-size: 1rem;
-        padding: 8px 8px;
+    .colorPalette {
+        min-width: 120px;
+        max-width: 98vw;
     }
-    .edit-actions button {
-        padding: 6px 12px;
-        font-size: 0.9rem;
+}
+
+@media (max-width: 480px) {
+    .note {
+        margin-left: -0.4rem;
+    }
+}
+
+@media (max-width: 430px) {
+    .note {
+        margin-left: -0.4rem;
+    }
+}
+
+@media (max-width: 390px) {
+    .note {
+        margin-left: -0.6rem;
+    }
+}
+
+@media (max-width: 360px) {
+    .note {
+        margin-left: -1.2rem;
     }
 }
