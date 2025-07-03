@@ -26,6 +26,7 @@ Este proyecto es una **réplica lo más fiel posible de la página Google Keep**
 - Cambiar el color de las notas desde una paleta.
 - Se pueden mover las notas de un lado a otro acomodandolas al gusto del usuario
 - Modo claro y oscuro.
+- Cambiar idioma de inglés a español y viceversa
 - Sidebar y menú hamburguesa funcionales.
 - Diseño responsive para dispositivos móviles y escritorio.
 - Interfaz y experiencia de usuario muy similar a la de Google Keep original.
